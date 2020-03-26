@@ -1,0 +1,36 @@
+@prefix ns1: <http://example.org/> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:Cade ns1:city ns1:Berkely ;
+    ns1:country ns1:USA ;
+    ns1:degree [ ns1:city ns1:Berkely ;
+            ns1:interest ns1:Biology ;
+            ns1:university "University of California" ;
+            ns1:year "2011" ] ;
+    ns1:interest ( ns1:birds ns1:ecology ns1:environment ns1:photography ns1:travelling ) ;
+    ns1:met [ ns1:city ns1:Paris ;
+            ns1:year "2014" ;
+            ns2:person ns1:Emma ] ;
+    ns1:state ns1:California ;
+    ns1:street "1516 Henry Street" ;
+    ns1:visited ( ns1:Canada ns1:France ns1:Germany ) ;
+    ns1:zipcode "94709" ;
+    ns2:knows ns1:Emma .
+
+ns1:Emma ns1:city ns1:Valencia ;
+    ns1:country ns1:Spain ;
+    ns1:age "26" ;
+    ns1:expertise ( ns1:waste_management ns1:toxic_waste ns1:air_pollution ),
+        ( ns1:bike_riding ns1:music ns1:travelling ),
+        ( ns1:Portugal ns1:Italy ns1:France ns1:Germany ns1:Denmark ns1:Sweden ) ;
+    ns1:street "Carrer de La Guardia Civil 20" ;
+    ns1:zipcode "46020" .
+
+[] ns1:interest ns1:Chemistry ;
+    ns1:university "University of Valencia" ;
+    ns1:year "2001" .
+

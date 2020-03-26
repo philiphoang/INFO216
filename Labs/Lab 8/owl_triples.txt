@@ -1,0 +1,807 @@
+@prefix dpb: <http://dbpedia.org/resource/United_States> .
+@prefix ex: <http://example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/Person> .
+@prefix geo: <http://sws.geonames.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+owl:Nothing a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Resource,
+        owl:Nothing,
+        owl:Thing ;
+    owl:equivalentClass owl:Nothing ;
+    owl:sameAs owl:Nothing .
+
+owl:Thing a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs owl:Thing .
+
+rdf:HTML a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs rdf:HTML .
+
+rdf:LangString a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs rdf:LangString .
+
+rdf:PlainLiteral a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs rdf:PlainLiteral .
+
+rdf:XMLLiteral a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs rdf:XMLLiteral .
+
+rdfs:isDefinedBy a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    owl:sameAs rdfs:isDefinedBy .
+
+rdfs:seeAlso a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    owl:sameAs rdfs:seeAlso .
+
+xsd:NCName a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:NCName .
+
+xsd:NMTOKEN a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:NMTOKEN .
+
+xsd:Name a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:Name .
+
+xsd:anyURI a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:anyURI .
+
+xsd:base64Binary a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:base64Binary .
+
+xsd:boolean a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:boolean .
+
+xsd:byte a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:byte .
+
+xsd:date a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:date .
+
+xsd:dateTime a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:dateTime .
+
+xsd:dateTimeStamp a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:dateTimeStamp .
+
+xsd:decimal a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:decimal .
+
+xsd:double a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:double .
+
+xsd:float a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:float .
+
+xsd:hexBinary a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:hexBinary .
+
+xsd:int a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:int .
+
+xsd:integer a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:integer .
+
+xsd:language a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:language .
+
+xsd:long a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:long .
+
+xsd:negativeInteger a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:negativeInteger .
+
+xsd:nonNegativeInteger a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:nonNegativeInteger .
+
+xsd:nonPositiveInteger a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:nonPositiveInteger .
+
+xsd:normalizedString a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:normalizedString .
+
+xsd:positiveInteger a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:positiveInteger .
+
+xsd:short a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:short .
+
+xsd:string a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:string .
+
+xsd:time a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:time .
+
+xsd:token a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:token .
+
+xsd:unsignedByte a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:unsignedByte .
+
+xsd:unsignedInt a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:unsignedInt .
+
+xsd:unsignedLong a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:unsignedLong .
+
+xsd:unsignedShort a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:unsignedShort .
+
+owl:backwardCompatibleWith a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    owl:sameAs owl:backwardCompatibleWith .
+
+owl:deprecated a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    owl:sameAs owl:deprecated .
+
+owl:incompatibleWith a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    owl:sameAs owl:incompatibleWith .
+
+owl:priorVersion a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    owl:sameAs owl:priorVersion .
+
+owl:versionInfo a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    owl:sameAs owl:versionInfo .
+
+<http://xmlns.com/foaf/0.1/Personliving> a rdfs:Resource,
+        owl:Thing ;
+    owl:inverseOf <http://dbpedia.org/resource/United_Stateshometown> ;
+    owl:sameAs <http://xmlns.com/foaf/0.1/Personliving> .
+
+<http://dbpedia.org/resource/United_StatesUnited_States> a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs <http://dbpedia.org/resource/United_StatesUnited_States>,
+        <http://sws.geonames.org/6252001> .
+
+<http://dbpedia.org/resource/United_Stateshometown> a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs <http://dbpedia.org/resource/United_Stateshometown> .
+
+ex:city a rdfs:Resource,
+        owl:Thing ;
+    owl:differentFrom owl:city ;
+    owl:disjointWith ex:city ;
+    owl:sameAs ex:city .
+
+<http://sws.geonames.org/6252001> a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs <http://dbpedia.org/resource/United_StatesUnited_States>,
+        <http://sws.geonames.org/6252001> .
+
+owl:city a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs owl:city .
+
+"Biology is a natural science concerned with the study of life and living organisms, including their structure, function, growth, evolution, distribution, identification and taxonomy." a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Biology is a natural science concerned with the study of life and living organisms, including their structure, function, growth, evolution, distribution, identification and taxonomy." .
+
+"Biology"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Biology"@en .
+
+"Chemistry"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Chemistry"@en .
+
+"Chemistry is a branch of physical science that studies the composition, structure, properties and change of matter."@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Chemistry is a branch of physical science that studies the composition, structure, properties and change of matter."@en .
+
+"La Biologie"@fr a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "La Biologie"@fr .
+
+"La Chimie"@fr a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "La Chimie"@fr .
+
+ex:Bob a rdfs:Resource,
+        owl:Thing ;
+    ex:fatherOf ex:Cade,
+        ex:Mary ;
+    owl:sameAs ex:Bob .
+
+ex:Chemistry a ex:Subject,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:label "Chemistry"@en,
+        "La Chimie"@fr ;
+    rdfs:comment "Chemistry is a branch of physical science that studies the composition, structure, properties and change of matter."@en ;
+    owl:sameAs ex:Chemistry .
+
+ex:Emma a rdfs:Resource,
+        owl:Thing,
+        foaf: ;
+    ex:degreeFrom ex:University_of_Valencia ;
+    ex:degreeSubject ex:Chemistry ;
+    ex:expertise ex:Chemistry ;
+    ex:graduated ex:University_of_Valencia ;
+    owl:sameAs ex:Emma .
+
+ex:University a rdfs:Resource,
+        owl:Thing ;
+    rdfs:subClassOf ex:Higher_Education_Institution ;
+    owl:sameAs ex:University .
+
+ex:University_of_Valencia a ex:Higher_Education_Institution,
+        ex:University,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs ex:University_of_Valencia .
+
+ex:degreeFrom a rdf:Property,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:domain foaf: ;
+    rdfs:range ex:Higher_Education_Institution ;
+    rdfs:subPropertyOf ex:degreeFrom,
+        ex:graduated ;
+    owl:equivalentProperty ex:degreeFrom ;
+    owl:sameAs ex:degreeFrom .
+
+ex:degreeSubject a rdf:Property,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:domain foaf: ;
+    rdfs:range ex:Subject ;
+    rdfs:subPropertyOf ex:degreeSubject,
+        ex:expertise ;
+    owl:equivalentProperty ex:degreeSubject ;
+    owl:sameAs ex:degreeSubject .
+
+ex:fatherOf a rdf:Property,
+        rdfs:Resource,
+        owl:AsymmetricProperty,
+        owl:IrreflexiveObjectProperty,
+        owl:Thing ;
+    rdfs:subPropertyOf ex:fatherOf ;
+    owl:equivalentProperty ex:fatherOf ;
+    owl:sameAs ex:fatherOf .
+
+ex:hasFather a rdf:Property,
+        rdfs:Resource,
+        owl:AsymmetricProperty,
+        owl:FunctionalProperty,
+        owl:IrreflexiveObjectProperty,
+        owl:Thing ;
+    rdfs:subPropertyOf ex:hasFather ;
+    owl:equivalentProperty ex:hasFather ;
+    owl:sameAs ex:hasFather .
+
+ex:livesWith a rdf:Property,
+        rdfs:Resource,
+        owl:FunctionalProperty,
+        owl:IrreflexiveObjectProperty,
+        owl:SymmetricProperty,
+        owl:Thing,
+        owl:TransitiveProperty ;
+    rdfs:subPropertyOf ex:livesWith ;
+    owl:equivalentProperty ex:livesWith ;
+    owl:sameAs ex:livesWith .
+
+ex:married a rdf:Property,
+        rdfs:Resource,
+        owl:FunctionalProperty,
+        owl:IrreflexiveObjectProperty,
+        owl:SymmetricProperty,
+        owl:Thing ;
+    rdfs:subPropertyOf ex:married ;
+    owl:equivalentProperty ex:married ;
+    owl:sameAs ex:married .
+
+ex:sibling a rdf:Property,
+        rdfs:Resource,
+        owl:IrreflexiveObjectProperty,
+        owl:SymmetricProperty,
+        owl:Thing,
+        owl:TransitiveProperty ;
+    rdfs:subPropertyOf ex:sibling ;
+    owl:equivalentProperty ex:sibling ;
+    owl:sameAs ex:sibling .
+
+rdf:type a rdf:Property ;
+    rdfs:subPropertyOf rdf:type ;
+    owl:equivalentProperty rdf:type ;
+    owl:sameAs rdf:type .
+
+rdfs:comment a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    rdfs:subPropertyOf rdfs:comment ;
+    owl:equivalentProperty rdfs:comment ;
+    owl:sameAs rdfs:comment .
+
+rdfs:domain a rdf:Property ;
+    rdfs:subPropertyOf rdfs:domain ;
+    owl:equivalentProperty rdfs:domain ;
+    owl:sameAs rdfs:domain .
+
+rdfs:label a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    rdfs:subPropertyOf rdfs:label ;
+    owl:equivalentProperty rdfs:label ;
+    owl:sameAs rdfs:label .
+
+rdfs:range a rdf:Property ;
+    rdfs:subPropertyOf rdfs:range ;
+    owl:equivalentProperty rdfs:range ;
+    owl:sameAs rdfs:range .
+
+rdfs:subClassOf a rdf:Property ;
+    rdfs:subPropertyOf rdfs:subClassOf ;
+    owl:equivalentProperty rdfs:subClassOf ;
+    owl:sameAs rdfs:subClassOf .
+
+rdfs:subPropertyOf a rdf:Property ;
+    rdfs:subPropertyOf rdfs:subPropertyOf ;
+    owl:equivalentProperty rdfs:subPropertyOf ;
+    owl:sameAs rdfs:subPropertyOf .
+
+owl:AsymmetricProperty a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs owl:AsymmetricProperty .
+
+owl:TransitiveProperty a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs owl:TransitiveProperty .
+
+owl:differentFrom a rdf:Property ;
+    rdfs:subPropertyOf owl:differentFrom ;
+    owl:equivalentProperty owl:differentFrom ;
+    owl:sameAs owl:differentFrom .
+
+owl:disjointWith a rdf:Property ;
+    rdfs:subPropertyOf owl:disjointWith ;
+    owl:equivalentProperty owl:disjointWith ;
+    owl:sameAs owl:disjointWith .
+
+owl:equivalentClass a rdf:Property ;
+    rdfs:subPropertyOf owl:equivalentClass ;
+    owl:equivalentProperty owl:equivalentClass ;
+    owl:sameAs owl:equivalentClass .
+
+owl:equivalentProperty a rdf:Property ;
+    rdfs:subPropertyOf owl:equivalentProperty ;
+    owl:equivalentProperty owl:equivalentProperty ;
+    owl:sameAs owl:equivalentProperty .
+
+owl:inverseOf a rdf:Property ;
+    rdfs:subPropertyOf owl:inverseOf ;
+    owl:equivalentProperty owl:inverseOf ;
+    owl:sameAs owl:inverseOf .
+
+owl:sameAs a rdf:Property ;
+    rdfs:subPropertyOf owl:sameAs ;
+    owl:equivalentProperty owl:sameAs ;
+    owl:sameAs owl:sameAs .
+
+ex:expertise a rdf:Property,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:domain foaf: ;
+    rdfs:range ex:Subject ;
+    rdfs:subPropertyOf ex:expertise ;
+    owl:equivalentProperty ex:expertise ;
+    owl:sameAs ex:expertise .
+
+ex:graduated a rdf:Property,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:domain foaf: ;
+    rdfs:range ex:Higher_Education_Institution ;
+    rdfs:subPropertyOf ex:graduated ;
+    owl:equivalentProperty ex:graduated ;
+    owl:sameAs ex:graduated .
+
+ex:livingIn a rdfs:Resource,
+        owl:Thing ;
+    rdfs:subPropertyOf ex:livingIn,
+        <http://xmlns.com/foaf/0.1/Personbased_near> ;
+    owl:equivalentProperty <http://xmlns.com/foaf/0.1/Personbased_near> ;
+    owl:sameAs ex:livingIn .
+
+owl:FunctionalProperty a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs owl:FunctionalProperty .
+
+owl:SymmetricProperty a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs owl:SymmetricProperty .
+
+<http://xmlns.com/foaf/0.1/Personbased_near> a rdfs:Resource,
+        owl:Thing ;
+    rdfs:subPropertyOf ex:livingIn,
+        <http://xmlns.com/foaf/0.1/Personbased_near> ;
+    owl:equivalentProperty ex:livingIn ;
+    owl:sameAs <http://xmlns.com/foaf/0.1/Personbased_near> .
+
+ex:Andrew a rdfs:Resource,
+        owl:Thing ;
+    ex:sibling ex:Andrew,
+        ex:Anna,
+        ex:Cade,
+        ex:Mary ;
+    owl:sameAs ex:Andrew .
+
+ex:Anna a rdfs:Resource,
+        owl:Thing ;
+    ex:sibling ex:Andrew,
+        ex:Anna,
+        ex:Cade,
+        ex:Mary ;
+    owl:sameAs ex:Anna .
+
+ex:Biology a ex:Subject,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:label "Biology"@en,
+        "La Biologie"@fr ;
+    rdfs:comment "Biology is a natural science concerned with the study of life and living organisms, including their structure, function, growth, evolution, distribution, identification and taxonomy." ;
+    owl:sameAs ex:Biology .
+
+ex:Subject a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs ex:Subject .
+
+ex:University_of_California a ex:Higher_Education_Institution,
+        ex:University,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs ex:University_of_California .
+
+ex:Higher_Education_Institution a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs ex:Higher_Education_Institution .
+
+owl:IrreflexiveObjectProperty a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs owl:IrreflexiveObjectProperty .
+
+vcard:postalCode a rdfs:Resource,
+        owl:Thing ;
+    rdfs:subPropertyOf ex:California,
+        <http://sws.geonames.org/94709>,
+        vcard:postalCode ;
+    owl:equivalentProperty ex:California,
+        <http://sws.geonames.org/94709> ;
+    owl:sameAs vcard:postalCode .
+
+rdfs:Class a rdfs:Resource,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Class,
+        owl:Class ;
+    owl:equivalentClass rdfs:Class,
+        owl:Class ;
+    owl:sameAs rdfs:Class .
+
+owl:Class a rdfs:Resource,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Class,
+        owl:Class ;
+    owl:equivalentClass rdfs:Class,
+        owl:Class ;
+    owl:sameAs owl:Class .
+
+ex:California a rdfs:Resource,
+        owl:Thing ;
+    rdfs:subPropertyOf ex:California,
+        <http://sws.geonames.org/94709>,
+        vcard:postalCode ;
+    owl:equivalentProperty ex:California,
+        <http://sws.geonames.org/94709>,
+        vcard:postalCode ;
+    owl:sameAs ex:California,
+        <http://sws.geonames.org/94709> .
+
+<http://sws.geonames.org/94709> a rdfs:Resource,
+        owl:Thing ;
+    rdfs:subPropertyOf ex:California,
+        <http://sws.geonames.org/94709>,
+        vcard:postalCode ;
+    owl:equivalentProperty ex:California,
+        <http://sws.geonames.org/94709>,
+        vcard:postalCode ;
+    owl:sameAs ex:California,
+        <http://sws.geonames.org/94709> .
+
+foaf: a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs foaf: .
+
+<http://www.aktors.org/ontology/portal#Person> a rdfs:Resource,
+        owl:Thing ;
+    rdfs:subClassOf ex:Person,
+        <http://www.aktors.org/ontology/portal#Person>,
+        <http://xmlns.com/foaf/0.1/PersonPerson>,
+        <https://schema.org/Person> ;
+    owl:equivalentClass ex:Person,
+        <http://www.aktors.org/ontology/portal#Person>,
+        <http://xmlns.com/foaf/0.1/PersonPerson>,
+        <https://schema.org/Person> ;
+    owl:sameAs <http://www.aktors.org/ontology/portal#Person> .
+
+<http://xmlns.com/foaf/0.1/PersonPerson> a rdfs:Resource,
+        owl:Thing ;
+    rdfs:subClassOf ex:Person,
+        <http://www.aktors.org/ontology/portal#Person>,
+        <http://xmlns.com/foaf/0.1/PersonPerson>,
+        <https://schema.org/Person> ;
+    owl:equivalentClass ex:Person,
+        <http://www.aktors.org/ontology/portal#Person>,
+        <http://xmlns.com/foaf/0.1/PersonPerson>,
+        <https://schema.org/Person> ;
+    owl:sameAs <http://xmlns.com/foaf/0.1/PersonPerson> .
+
+<https://schema.org/Person> a rdfs:Resource,
+        owl:Thing ;
+    rdfs:subClassOf ex:Person,
+        <http://www.aktors.org/ontology/portal#Person>,
+        <http://xmlns.com/foaf/0.1/PersonPerson>,
+        <https://schema.org/Person> ;
+    owl:equivalentClass ex:Person,
+        <http://www.aktors.org/ontology/portal#Person>,
+        <http://xmlns.com/foaf/0.1/PersonPerson>,
+        <https://schema.org/Person> ;
+    owl:sameAs <https://schema.org/Person> .
+
+ex:Person a rdfs:Resource,
+        owl:Thing ;
+    rdfs:subClassOf ex:Person,
+        <http://www.aktors.org/ontology/portal#Person>,
+        <http://xmlns.com/foaf/0.1/PersonPerson>,
+        <https://schema.org/Person> ;
+    owl:disjointWith ex:Person ;
+    owl:equivalentClass ex:Person,
+        <http://www.aktors.org/ontology/portal#Person>,
+        <http://xmlns.com/foaf/0.1/PersonPerson>,
+        <https://schema.org/Person> ;
+    owl:sameAs ex:Person .
+
+owl:AnnotationProperty a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs owl:AnnotationProperty .
+
+ex:Cade a rdfs:Resource,
+        owl:Thing,
+        foaf: ;
+    ex:degreeFrom ex:University_of_California ;
+    ex:degreeSubject ex:Biology ;
+    ex:expertise ex:Biology ;
+    ex:graduated ex:University_of_California ;
+    ex:hasFather ex:Bob ;
+    ex:livesWith ex:Cade,
+        ex:Mary ;
+    ex:married ex:Cade,
+        ex:Mary ;
+    ex:sibling ex:Andrew,
+        ex:Anna,
+        ex:Cade,
+        ex:Mary ;
+    owl:differentFrom ex:Emma ;
+    owl:sameAs ex:Cade,
+        ex:Mary .
+
+ex:Mary a rdfs:Resource,
+        owl:Thing,
+        foaf: ;
+    ex:degreeFrom ex:University_of_California ;
+    ex:degreeSubject ex:Biology ;
+    ex:expertise ex:Biology ;
+    ex:graduated ex:University_of_California ;
+    ex:hasFather ex:Bob ;
+    ex:livesWith ex:Cade,
+        ex:Mary ;
+    ex:married ex:Cade,
+        ex:Mary ;
+    ex:sibling ex:Andrew,
+        ex:Anna,
+        ex:Cade,
+        ex:Mary ;
+    owl:differentFrom ex:Emma ;
+    owl:sameAs ex:Cade,
+        ex:Mary .
+
+rdf:Property owl:sameAs rdf:Property .
+
+rdfs:Literal a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:equivalentClass rdfs:Literal ;
+    owl:sameAs rdfs:Literal .
+
+rdfs:Datatype a rdfs:Resource,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Datatype,
+        owl:DataRange ;
+    owl:equivalentClass rdfs:Datatype,
+        owl:DataRange ;
+    owl:sameAs rdfs:Datatype .
+
+owl:DataRange a rdfs:Resource,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Datatype,
+        owl:DataRange ;
+    owl:equivalentClass rdfs:Datatype,
+        owl:DataRange ;
+    owl:sameAs owl:DataRange .
+
+rdfs:Resource a rdfs:Resource,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs rdfs:Resource .
+
